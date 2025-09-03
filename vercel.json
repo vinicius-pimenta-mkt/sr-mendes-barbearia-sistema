@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "DashboardBarber/src/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "DashboardBarber/src/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "DashboardBarber/src/main.py"
+    }
+  ]
+}
+
