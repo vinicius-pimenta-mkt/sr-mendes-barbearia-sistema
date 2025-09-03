@@ -12,7 +12,8 @@
       "src": "/(.*)",
       "dest": "DashboardBarber/src/main.py"
     }
-  ]
+  ],
+  "buildCommand": "pip install -r DashboardBarber/requirements.txt"
 }
 
 
